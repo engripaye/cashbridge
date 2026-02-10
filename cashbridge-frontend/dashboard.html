@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard | CashBridge</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #eef2f7;
+        }
+        .header {
+            background: #0a2540;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .card {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .balance {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="header">Dashboard</div>
+
+<div class="card">
+    <div class="balance">₦250,000</div>
+    <p>Available Balance</p>
+    <button onclick="location.href='send.html'">Send Money</button>
+    <button onclick="location.href='escrow.html'">Escrow Payment</button>
+</div>
+
+<div class="card">
+    <h3>Recent Transactions</h3>
+    <p>₦20,000 → John (Completed)</p>
+    <p>₦50,000 → Vendor (Escrow)</p>
+</div>
+</body>
+</html>
