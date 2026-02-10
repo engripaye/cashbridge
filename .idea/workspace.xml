@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="822ed3f9-4294-43f7-8f3e-17392628ad2a" name="Changes" comment="" />
+    <list default="true" id="822ed3f9-4294-43f7-8f3e-17392628ad2a" name="Changes" comment="init commit by ENGR. IPAYE" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,8 +24,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Lenovo/IdeaProjects/cashbridge",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -38,11 +43,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1770713458383</updated>
-      <workItem from="1770713459330" duration="16000" />
+      <workItem from="1770713459330" duration="497000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit by ENGR. IPAYE">
+      <option name="closed" value="true" />
+      <created>1770713663795</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1770713663795</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit by ENGR. IPAYE" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit by ENGR. IPAYE" />
   </component>
 </project>
