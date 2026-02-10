@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="822ed3f9-4294-43f7-8f3e-17392628ad2a" name="Changes" comment="init commit by ENGR. IPAYE" />
+    <list default="true" id="822ed3f9-4294-43f7-8f3e-17392628ad2a" name="Changes" comment="init commit by ENGR. IPAYE">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cashbridge-frontend/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cashbridge-frontend/escrow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cashbridge-frontend/risk-alert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cashbridge-frontend/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/cashbridge-frontend/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cashbridge-frontend/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/cashbridge-frontend/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cashbridge-frontend/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/cashbridge-frontend/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cashbridge-frontend/send.html" beforeDir="false" afterPath="$PROJECT_DIR$/cashbridge-frontend/send.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
@@ -21,12 +49,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Lenovo/IdeaProjects/cashbridge",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -43,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1770713458383</updated>
-      <workItem from="1770713459330" duration="497000" />
+      <workItem from="1770713459330" duration="3650000" />
     </task>
     <task id="LOCAL-00001" summary="init commit by ENGR. IPAYE">
       <option name="closed" value="true" />
@@ -53,7 +84,23 @@
       <option name="project" value="LOCAL" />
       <updated>1770713663795</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init commit by ENGR. IPAYE">
+      <option name="closed" value="true" />
+      <created>1770713999939</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770713999939</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init commit by ENGR. IPAYE">
+      <option name="closed" value="true" />
+      <created>1770715193851</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1770715193851</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

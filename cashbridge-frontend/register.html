@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Register | CashBridge</title>
 
     <style>
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
+            background: #0b0f14;
+            font-family: system-ui, sans-serif;
+            color: #fff;
         }
         .container {
             max-width: 420px;
             margin: auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
         .card {
-            background: #fff;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,.1);
+            background: #121821;
+            padding: 30px;
+            border-radius: 16px;
         }
         h1 {
-            color: #0a2540;
-            margin-bottom: 15px;
+            color: #00d54b;
+            margin-bottom: 10px;
         }
-        input, button {
+        p {
+            color: #9aa4b2;
+        }
+        input {
             width: 100%;
-            padding: 12px;
-            margin-top: 10px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
+            padding: 14px;
+            margin-top: 12px;
+            background: #0b0f14;
+            border: 1px solid #1f2937;
+            border-radius: 10px;
+            color: #fff;
         }
         button {
-            background: #0a2540;
-            color: #fff;
+            width: 100%;
+            margin-top: 20px;
+            padding: 14px;
+            background: #00d54b;
             border: none;
-            cursor: pointer;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -45,14 +53,17 @@
 <body>
 <div class="container">
     <div class="card">
-        <h1>Create Account</h1>
+        <h1>Create CashBridge</h1>
+        <p>Secure payments built for Nigeria</p>
+
         <input placeholder="Full Name">
-        <input type="email" placeholder="Email">
+        <input placeholder="Email">
         <input placeholder="Phone Number">
         <input placeholder="BVN (Mock)">
         <input placeholder="NIN (Mock)">
         <input type="password" placeholder="Password">
-        <button>Register</button>
+
+        <button>Create Account</button>
     </div>
 </div>
 </body>

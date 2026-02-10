@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login | CashBridge</title>
+    <title>Escrow | CashBridge</title>
 
     <style>
         body {
@@ -10,42 +10,45 @@
             font-family: system-ui;
             color: white;
         }
-        .box {
-            max-width: 380px;
-            margin: 120px auto;
-            padding: 30px;
-            background: #121821;
-            border-radius: 16px;
+        .container {
+            max-width: 420px;
+            margin: auto;
+            padding: 30px 20px;
         }
-        h2 {
-            color: #00d54b;
+        .card {
+            background: #121821;
+            padding: 25px;
+            border-radius: 16px;
         }
         input {
             width: 100%;
             padding: 14px;
-            margin-top: 15px;
+            margin-top: 14px;
             background: #0b0f14;
-            border: 1px solid #1f2937;
             border-radius: 10px;
+            border: 1px solid #1f2937;
             color: white;
         }
         button {
             width: 100%;
-            padding: 14px;
             margin-top: 20px;
+            padding: 14px;
             background: #00d54b;
-            border: none;
             border-radius: 12px;
+            border: none;
         }
     </style>
 </head>
 
 <body>
-<div class="box">
-    <h2>Welcome Back</h2>
-    <input placeholder="Email">
-    <input type="password" placeholder="Password">
-    <button>Login</button>
+<div class="container">
+    <div class="card">
+        <h2>Escrow Payment</h2>
+        <input placeholder="Recipient">
+        <input placeholder="Amount">
+        <input placeholder="Release Condition">
+        <button>Create Escrow</button>
+    </div>
 </div>
 </body>
 </html>

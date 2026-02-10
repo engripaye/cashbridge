@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login | CashBridge</title>
+    <title>Security Alert | CashBridge</title>
 
     <style>
         body {
@@ -10,30 +10,19 @@
             font-family: system-ui;
             color: white;
         }
-        .box {
+        .alert {
             max-width: 380px;
             margin: 120px auto;
-            padding: 30px;
             background: #121821;
+            padding: 25px;
             border-radius: 16px;
-        }
-        h2 {
-            color: #00d54b;
-        }
-        input {
-            width: 100%;
-            padding: 14px;
-            margin-top: 15px;
-            background: #0b0f14;
-            border: 1px solid #1f2937;
-            border-radius: 10px;
-            color: white;
+            border-left: 6px solid #ff4d4f;
         }
         button {
             width: 100%;
             padding: 14px;
             margin-top: 20px;
-            background: #00d54b;
+            background: #ff4d4f;
             border: none;
             border-radius: 12px;
         }
@@ -41,11 +30,10 @@
 </head>
 
 <body>
-<div class="box">
-    <h2>Welcome Back</h2>
-    <input placeholder="Email">
-    <input type="password" placeholder="Password">
-    <button>Login</button>
+<div class="alert">
+    <h2>Transaction Flagged</h2>
+    <p>This transaction looks risky. Please verify.</p>
+    <button>Verify Identity</button>
 </div>
 </body>
 </html>
