@@ -1,39 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Security Alert | CashBridge</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", system-ui, sans-serif;
+        }
+
         body {
-            background: #0b0f14;
-            font-family: system-ui;
-            color: white;
+            background: linear-gradient(135deg, #0f172a, #111827);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #ffffff;
         }
-        .alert {
-            max-width: 380px;
-            margin: 120px auto;
-            background: #121821;
-            padding: 25px;
-            border-radius: 16px;
-            border-left: 6px solid #ff4d4f;
+
+        .alert-card {
+            background: #1e293b;
+            max-width: 420px;
+            width: 100%;
+            padding: 35px 25px;
+            border-radius: 22px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            text-align: center;
         }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #f87171;
+        }
+
+        .message {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .risk-score {
+            background: #7f1d1d;
+            color: #fecaca;
+            padding: 10px;
+            border-radius: 12px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
         button {
             width: 100%;
             padding: 14px;
-            margin-top: 20px;
-            background: #ff4d4f;
+            background: #ef4444;
+            border-radius: 14px;
             border: none;
-            border-radius: 12px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .secondary {
+            margin-top: 12px;
+            font-size: 13px;
+            color: #60a5fa;
+            cursor: pointer;
+        }
+
+        @media (max-width: 480px) {
+            .alert-card {
+                padding: 30px 20px;
+            }
         }
     </style>
 </head>
 
 <body>
-<div class="alert">
-    <h2>Transaction Flagged</h2>
-    <p>This transaction looks risky. Please verify.</p>
+
+<div class="alert-card">
+
+    <div class="icon">⚠️</div>
+
+    <div class="title">Transaction Flagged</div>
+
+    <div class="message">
+        We detected unusual activity on this transaction.
+        To protect your funds, additional verification is required.
+    </div>
+
+    <div class="risk-score">
+        Risk Score: 82/100 — High Risk
+    </div>
+
     <button>Verify Identity</button>
+
+    <div class="secondary">
+        Cancel Transaction
+    </div>
+
 </div>
+
 </body>
 </html>

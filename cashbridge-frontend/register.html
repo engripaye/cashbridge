@@ -6,65 +6,150 @@
     <title>Register | CashBridge</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", system-ui, sans-serif;
+        }
+
         body {
-            background: #0b0f14;
-            font-family: system-ui, sans-serif;
-            color: #fff;
+            background: linear-gradient(135deg, #0f172a, #111827);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            padding: 20px;
         }
-        .container {
-            max-width: 420px;
-            margin: auto;
-            padding: 40px 20px;
+
+        .register-card {
+            background: #1e293b;
+            padding: 40px 30px;
+            border-radius: 22px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
         }
-        .card {
-            background: #121821;
-            padding: 30px;
-            border-radius: 16px;
-        }
-        h1 {
-            color: #00d54b;
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            text-align: center;
             margin-bottom: 10px;
         }
-        p {
-            color: #9aa4b2;
+
+        .subtitle {
+            text-align: center;
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 30px;
         }
+
+        .label {
+            font-size: 13px;
+            color: #94a3b8;
+            margin-top: 14px;
+            margin-bottom: 6px;
+        }
+
         input {
             width: 100%;
             padding: 14px;
-            margin-top: 12px;
-            background: #0b0f14;
-            border: 1px solid #1f2937;
-            border-radius: 10px;
+            background: #0f172a;
+            border-radius: 12px;
+            border: 1px solid #334155;
             color: #fff;
+            font-size: 14px;
+            transition: 0.2s ease;
         }
+
+        input:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+        }
+
+        .info-note {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 8px;
+        }
+
         button {
             width: 100%;
-            margin-top: 20px;
+            margin-top: 25px;
             padding: 14px;
             background: #00d54b;
+            border-radius: 14px;
             border: none;
-            border-radius: 12px;
-            font-size: 16px;
-            font-weight: bold;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .login-link {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 20px;
+            color: #94a3b8;
+        }
+
+        .login-link span {
+            color: #60a5fa;
+            cursor: pointer;
+        }
+
+        @media (max-width: 480px) {
+            .register-card {
+                padding: 30px 20px;
+            }
         }
     </style>
 </head>
 
 <body>
-<div class="container">
-    <div class="card">
-        <h1>Create CashBridge</h1>
-        <p>Secure payments built for Nigeria</p>
 
-        <input placeholder="Full Name">
-        <input placeholder="Email">
-        <input placeholder="Phone Number">
-        <input placeholder="BVN (Mock)">
-        <input placeholder="NIN (Mock)">
-        <input type="password" placeholder="Password">
+<div class="register-card">
 
-        <button>Create Account</button>
+    <div class="logo">CashBridge</div>
+    <div class="subtitle">Create your secure digital wallet</div>
+
+    <div class="label">Full Name</div>
+    <input type="text" placeholder="John Doe">
+
+    <div class="label">Email Address</div>
+    <input type="email" placeholder="you@example.com">
+
+    <div class="label">Phone Number</div>
+    <input type="tel" placeholder="+234 801 234 5678">
+
+    <div class="label">BVN (Mock)</div>
+    <input type="text" placeholder="Enter BVN">
+
+    <div class="label">NIN (Mock)</div>
+    <input type="text" placeholder="Enter NIN">
+
+    <div class="label">Password</div>
+    <input type="password" placeholder="Create a strong password">
+
+    <div class="info-note">
+        Your identity information is securely encrypted and used for verification only.
     </div>
+
+    <button>Create Account</button>
+
+    <div class="login-link">
+        Already have an account? <span>Login</span>
+    </div>
+
 </div>
+
 </body>
 </html>
