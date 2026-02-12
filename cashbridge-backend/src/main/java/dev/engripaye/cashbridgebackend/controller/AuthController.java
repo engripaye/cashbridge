@@ -1,6 +1,7 @@
 package dev.engripaye.cashbridgebackend.controller;
 
 
+import dev.engripaye.cashbridgebackend.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,5 +15,5 @@ public class AuthController {
 
     private final AuthService authService;
 
-    @
+
 }
