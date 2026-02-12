@@ -2,10 +2,7 @@ package dev.engripaye.cashbridgebackend.entity;
 
 import dev.engripaye.cashbridgebackend.wallet.Wallet;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
@@ -14,7 +11,7 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "transactions")
+@Builder
 public class Transaction {
 
     @Id

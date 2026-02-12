@@ -26,12 +26,15 @@ public class User {
 
     private String phone;
 
+    private String bvn;
+
+    private String nin;
+
     private String password;
 
-    private String role; // ROLE_USER, ROLE_ADMIN
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private Account account;
 
-    private Double trustScore;
 
-    private LocalDateTime createdAt;
 
 }
