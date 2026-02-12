@@ -1,61 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | CashBridge</title>
 
     <style>
-        body {
-            background: #0b0f14;
-            font-family: system-ui;
-            color: white;
+        * {
+            box-sizing: border-box;
             margin: 0;
+            padding: 0;
+            font-family: "Inter", system-ui, sans-serif;
         }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #111827);
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+        }
+
         .header {
-            padding: 20px;
-            font-size: 20px;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 25px;
         }
-        .balance {
-            font-size: 36px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
+
         .card {
-            background: #121821;
-            margin: 15px;
-            padding: 20px;
-            border-radius: 16px;
+            background: #1e293b;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
         }
-        button {
-            width: 100%;
-            padding: 14px;
-            margin-top: 12px;
-            background: #00d54b;
-            border: none;
-            border-radius: 12px;
-        }
-        .tx {
+
+        .balance-label {
             font-size: 14px;
-            color: #9aa4b2;
+            color: #94a3b8;
+            margin-bottom: 8px;
+        }
+
+        .balance {
+            font-size: 38px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            flex: 1;
+            padding: 14px;
+            border-radius: 12px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .send-btn {
+            background: #00d54b;
+            color: #000;
+        }
+
+        .escrow-btn {
+            background: #2563eb;
+            color: #fff;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .transaction {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #334155;
+            font-size: 14px;
+        }
+
+        .transaction:last-child {
+            border-bottom: none;
+        }
+
+        .amount {
+            font-weight: 600;
+        }
+
+        .escrow {
+            color: #60a5fa;
+        }
+
+        @media (max-width: 480px) {
+            .balance {
+                font-size: 32px;
+            }
         }
     </style>
 </head>
 
 <body>
-<div class="header">CashBridge</div>
 
-<div class="card">
-    <div class="balance">₦250,000</div>
-    <div class="tx">Available balance</div>
+<div class="container">
 
-    <button onclick="location.href='send.html'">Send</button>
-    <button onclick="location.href='escrow.html'">Escrow</button>
+    <div class="header">CashBridge</div>
+
+    <div class="card">
+        <div class="balance-label">Available Balance</div>
+        <div class="balance">₦250,000</div>
+
+        <div class="buttons">
+            <button class="send-btn" onclick="location.href='send.html'">Send</button>
+            <button class="escrow-btn" onclick="location.href='escrow.html'">Escrow</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="section-title">Recent Transactions</div>
+
+        <div class="transaction">
+            <span>John</span>
+            <span class="amount">₦20,000</span>
+        </div>
+
+        <div class="transaction">
+            <span>Vendor <span class="escrow">(Escrow)</span></span>
+            <span class="amount">₦50,000</span>
+        </div>
+
+    </div>
+
 </div>
 
-<div class="card">
-    <h3>Recent</h3>
-    <p class="tx">₦20,000 → John</p>
-    <p class="tx">₦50,000 → Vendor (Escrow)</p>
-</div>
 </body>
 </html>
