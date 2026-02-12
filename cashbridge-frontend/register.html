@@ -156,3 +156,29 @@
 
 </body>
 </html>
+
+<script>
+    document.querySelector("button").addEventListener("click", async () => {
+
+        const data = {
+            fullName: document.querySelectorAll("input")[0].value,
+            email: document.querySelectorAll("input")[1].value,
+            phone: document.querySelectorAll("input")[2].value,
+            bvn: document.querySelectorAll("input")[3].value,
+            nin: document.querySelectorAll("input")[4].value,
+            password: document.querySelectorAll("input")[5].value
+        };
+
+        const response = await fetch("http://localhost:8080/api/auth/register", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+        alert("Registration Successful!");
+    });
+</script>
+

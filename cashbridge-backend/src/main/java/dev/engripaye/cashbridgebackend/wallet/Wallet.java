@@ -1,6 +1,6 @@
 package dev.engripaye.cashbridgebackend.wallet;
 
-import dev.engripaye.cashbridgebackend.user.User;
+import dev.engripaye.cashbridgebackend.entity.User;
 import jakarta.persistence.*;
 import lombok.*;
 

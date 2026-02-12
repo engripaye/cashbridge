@@ -1,4 +1,4 @@
-package dev.engripaye.cashbridgebackend.user;
+package dev.engripaye.cashbridgebackend.entity;
 
 
 import jakarta.persistence.*;

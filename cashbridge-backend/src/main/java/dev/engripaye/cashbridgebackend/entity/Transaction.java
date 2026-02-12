@@ -1,4 +1,4 @@
-package dev.engripaye.cashbridgebackend.transaction;
+package dev.engripaye.cashbridgebackend.entity;
 
 import dev.engripaye.cashbridgebackend.wallet.Wallet;
 import jakarta.persistence.*;
