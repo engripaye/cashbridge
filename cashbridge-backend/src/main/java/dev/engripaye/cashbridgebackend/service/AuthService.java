@@ -12,6 +12,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.Random;
 
 @Service
 @RequiredArgsConstructor
@@ -51,5 +52,19 @@ public class AuthService {
     public AuthResponse login(LoginRequest request){
 
         User user = userRepository.findByEmail(request.getEmail())
+                .orElseThrow(() -> new RuntimeException("User not found"));
+
+        if(!passwordEncoder.matches(request.getPassword(), user.getPassword())){
+            throw new RuntimeException("Invalid credentials");
+        }
+
+        return AuthResponse.builder()
+                .message("Login Successful")
+                .accountNumber(user.getAccount().getAccountNumber())
+                .build();
+    }
+
+    private String generateAccountNumber(){
+        return "20" + (10000000 + new Random().nextInt(90000000));
     }
 }
