@@ -4,6 +4,7 @@ import dev.engripaye.cashbridgebackend.wallet.Wallet;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
@@ -18,18 +19,16 @@ public class Transaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    private Wallet sender;
+    private String recipient;
+
+    private BigDecimal amount;
+
+    private LocalDateTime timestamp;
+
+    private String status;
 
     @ManyToOne
-    private Wallet receiver;
-
-    private Double amount;
-
-    private String status; // PENDING, SUCCESS, BLOCKED
-
-    private Double riskScore;
-
-    private LocalDateTime createdAt;
+    @JoinColumn(name = "account_id")
+    private Account account;
 
 }
