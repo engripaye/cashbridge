@@ -1,6 +1,7 @@
 package dev.engripaye.cashbridgebackend.service;
 
 import dev.engripaye.cashbridgebackend.dto.AuthResponse;
+import dev.engripaye.cashbridgebackend.dto.LoginRequest;
 import dev.engripaye.cashbridgebackend.dto.RegisterRequest;
 import dev.engripaye.cashbridgebackend.entity.Account;
 import dev.engripaye.cashbridgebackend.entity.User;
@@ -45,5 +46,10 @@ public class AuthService {
                 .message("User Registered Successfully")
                 .accountNumber(account.getAccountNumber())
                 .build();
+    }
+
+    public AuthResponse login(LoginRequest request){
+
+        User user = userRepository.findByEmail(request.getEmail())
     }
 }
