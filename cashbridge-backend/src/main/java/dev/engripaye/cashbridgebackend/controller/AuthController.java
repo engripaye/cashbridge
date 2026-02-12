@@ -25,7 +25,13 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<AuthResponse> login(@ResponseBody LoginRequest request){
+    public ResponseEntity<AuthResponse> login(@RequestBody LoginRequest request){
+        AuthResponse response = authService.login(request);
+        String token = jwtUtil.generateToken(request.getEmail());
+        return ResponseEntity.ok(AuthResponse.builder()
+                .message(response.getMessage())
+                .accountNumber(response.getAccountNumber())
+                .build());
 
     }
 
