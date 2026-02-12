@@ -13,4 +13,6 @@ public class AuthService {
     private final UserRepository userRepository;
     private final AccountRepository accountRepository;
     private final PasswordEncoder passwordEncoder;
+
+    public AuthResponse register()
 }
