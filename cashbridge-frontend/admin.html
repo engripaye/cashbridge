@@ -1,44 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin | CashBridge</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", system-ui, sans-serif;
+        }
+
         body {
-            background: #0b0f14;
-            font-family: system-ui;
-            color: white;
+            background: linear-gradient(135deg, #0f172a, #111827);
+            color: #ffffff;
+            padding: 20px;
         }
+
         .container {
-            padding: 20px;
+            max-width: 800px;
+            margin: auto;
         }
+
+        .header {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
         .card {
-            background: #121821;
+            background: #1e293b;
             padding: 20px;
-            border-radius: 14px;
-            margin-bottom: 15px;
+            border-radius: 18px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
         }
+
+        .transaction-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .amount {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .user {
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        .risk-badge {
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .low { background: #065f46; color: #34d399; }
+        .medium { background: #78350f; color: #fbbf24; }
+        .high { background: #7f1d1d; color: #f87171; }
+
+        .buttons {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
         button {
-            padding: 10px 14px;
-            margin-right: 10px;
-            border-radius: 10px;
+            flex: 1;
+            padding: 12px;
+            border-radius: 12px;
             border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s ease;
         }
-        .approve { background: #00d54b; }
-        .block { background: #ff4d4f; color: white; }
+
+        .approve {
+            background: #00d54b;
+            color: #000;
+        }
+
+        .block {
+            background: #ef4444;
+            color: #fff;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        @media (max-width: 600px) {
+            .transaction-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+        }
     </style>
 </head>
 
 <body>
-<div class="container">
-    <h2>Fraud Monitoring</h2>
 
+<div class="container">
+
+    <div class="header">Admin Dashboard – Fraud Monitoring</div>
+
+    <!-- Transaction Card -->
     <div class="card">
-        <p>$120,000 – User123</p>
-        <button class="approve">Approve</button>
-        <button class="block">Block</button>
+
+        <div class="transaction-header">
+            <div>
+                <div class="amount">₦120,000</div>
+                <div class="user">User123 → Wallet Transfer</div>
+            </div>
+
+            <div class="risk-badge high">High Risk</div>
+        </div>
+
+        <div class="buttons">
+            <button class="approve">Approve</button>
+            <button class="block">Block</button>
+        </div>
+
     </div>
+
+    <!-- Example Medium Risk -->
+    <div class="card">
+
+        <div class="transaction-header">
+            <div>
+                <div class="amount">₦45,000</div>
+                <div class="user">User456 → Escrow Payment</div>
+            </div>
+
+            <div class="risk-badge medium">Medium Risk</div>
+        </div>
+
+        <div class="buttons">
+            <button class="approve">Approve</button>
+            <button class="block">Block</button>
+        </div>
+
+    </div>
+
 </div>
+
 </body>
 </html>

@@ -1,54 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escrow | CashBridge</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", system-ui, sans-serif;
+        }
+
         body {
-            background: #0b0f14;
-            font-family: system-ui;
-            color: white;
+            background: linear-gradient(135deg, #0f172a, #111827);
+            color: #ffffff;
+            padding: 20px;
         }
+
         .container {
-            max-width: 420px;
+            max-width: 480px;
             margin: auto;
-            padding: 30px 20px;
         }
+
+        .header {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
         .card {
-            background: #121821;
+            background: #1e293b;
             padding: 25px;
-            border-radius: 16px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
         }
-        input {
+
+        .label {
+            font-size: 13px;
+            color: #94a3b8;
+            margin-top: 15px;
+            margin-bottom: 6px;
+        }
+
+        input, select, textarea {
             width: 100%;
             padding: 14px;
-            margin-top: 14px;
-            background: #0b0f14;
-            border-radius: 10px;
-            border: 1px solid #1f2937;
-            color: white;
+            background: #0f172a;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            color: #fff;
+            font-size: 14px;
         }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .info-box {
+            background: #0f172a;
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 13px;
+            margin-top: 18px;
+            color: #94a3b8;
+        }
+
         button {
             width: 100%;
             margin-top: 20px;
             padding: 14px;
-            background: #00d54b;
-            border-radius: 12px;
+            background: #2563eb;
+            border-radius: 14px;
             border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .secure-note {
+            text-align: center;
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 
 <body>
+
 <div class="container">
+
+    <div class="header">Create Escrow Payment</div>
+
     <div class="card">
-        <h2>Escrow Payment</h2>
-        <input placeholder="Recipient">
-        <input placeholder="Amount">
-        <input placeholder="Release Condition">
-        <button>Create Escrow</button>
+
+        <div class="label">Recipient Username</div>
+        <input type="text" placeholder="e.g. john_doe">
+
+        <div class="label">Amount (₦)</div>
+        <input type="number" placeholder="Enter amount">
+
+        <div class="label">Release Condition</div>
+        <textarea placeholder="Describe delivery condition or agreement"></textarea>
+
+        <div class="label">Expiry Duration</div>
+        <select>
+            <option>24 Hours</option>
+            <option>3 Days</option>
+            <option>7 Days</option>
+        </select>
+
+        <div class="info-box">
+            Funds will be securely locked until the recipient confirms delivery
+            or the escrow expires. If expired, funds are automatically refunded.
+        </div>
+
+        <button>Create Secure Escrow</button>
+
+        <div class="secure-note">
+            🔒 Protected by CashBridge Escrow Security
+        </div>
+
     </div>
+
 </div>
+
 </body>
 </html>
